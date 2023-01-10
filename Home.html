@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ADI Coding.lk</title>
+	<style>
+        *{
+    margin: 0;
+    padding: 0;
+
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(Home.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo img{
+    position: relative;
+    top: 10px;
+    left: 0px;
+    width: 250px;
+    height: 130px;
+}
+
+.menu{
+    width: 600px;
+    position: relative;
+    left: 500px;
+    top: -70px;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul a button{
+    width: 110px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #ff7200;
+    list-style: none;
+    margin-left: 60px;
+    margin-top: 27px;
+    font-size: 18px;
+    border-color: white;
+    transition: 0.3s ease-in-out;
+}
+
+ul a button h6{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+ul a button h6:hover{
+    color: #ff7200;
+}
+
+ul a button:hover{
+    background-color: #fff;
+    border-color: #ff7200;
+}
+
+.catagory a{
+    position: relative;
+    margin: 30px;
+    top: -400px;
+    left: 280px;
+}
+.catagory a button{
+    width: 200px;
+    height: 200px;
+    border-width: 10px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #fff;
+    border-color: #ff7200;
+}
+.catagory a button h6{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 33px;
+    color: #ff7200;
+    position: relative;
+    top: 5px;
+}
+.catagory a button span{
+    position: relative;
+    top: -15px;
+    font-size: 90px;
+}
+.catagory a button:hover{
+    background-color: #ff7200;
+    border-color: #fff;
+}
+.catagory a button h6:hover{
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <div class="logo"><img src="logoadi.jpg" alt=""></div>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <a href="Home.html"><button><h6>HOME</h6></button></a>
+                    <a href="Home.html"><button><h6>ABOUT</h6></button></a>
+                    <a href="Home.html"><button><h6>CONTACT</h6></button></a>
+                    <a href="Home.html"><button><h6>RATE/LIKE</h6></button></a>
+                    
+                </ul>
+            </div>
+            
+            </div>
+        </div>
+	</div>
+    <div class="catagory">
+        <a href=""><button><span>&#128167</span><h6>Waterfalls</h6></button></a>
+        <a href=""><button><span>&#127748</span><h6>Mountains</h6></button></a>
+        <a href=""><button><span>&#128642</span><h6>Trains</h6></button></a>
+    </div>
+    <script>
+        function myFunction(){
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick=function(event){
+            if (!event.target.matches('dropbtn')) {
+                var dropdowns=document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; 1<dropdowns.length; i++) {
+                    var openDropdown=dropdowns[i];
+                    if (openDropdown.classList.contains('show')){
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
